@@ -1,0 +1,128 @@
+/* Global Styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+    font-size: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: darkblue;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+/* Container */
+.exam-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Cards */
+.exam-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #0066cc;
+}
+
+.exam-card h2 {
+    margin-top: 0;
+    color: #0066cc;
+}
+
+/* List Styling */
+.exam-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.exam-card li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.exam-card li a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.exam-card li a:hover {
+    color: red;
+}
+
+.exam-card li:last-child {
+    border-bottom: none;
+}
+
+.exam-card li:hover {
+    background: cornsilk;
+    padding-left: 5px;
+    transition: 0.2s;
+}
+
+/* Donation Box */
+.donation-box {
+    max-width: 1200px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    border-top: 6px solid green;
+}
+
+.donation-box h2 {
+    margin-top: 0;
+    color: green;
+    text-align: center;
+}
+
+.donation-box p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Donation Grid */
+.donation-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+/* Donation Items */
+.donation-item {
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #c3e6cb;
+    text-align: left;
+    white-space: nowrap;  /* prevents breaking */
+}
+
+.donation-item a {
+    color: darkblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.donation-item a:hover {
+    color: red;
+}
+
+.donation-item strong {
+    color: green;
+}
+
+.donation-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
