@@ -29,12 +29,12 @@ h1 {
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-left: 6px solid #0066cc;
+    border-left: 6px solid darkblue;
 }
 
 .exam-card h2 {
     margin-top: 0;
-    color: #0066cc;
+    color: darkblue;
 }
 
 /* List Styling */
@@ -125,4 +125,43 @@ h1 {
     gap: 20px;
     word-wrap: break-word;
     overflow-wrap: break-word;
+}
+
+/* Information Section (YouTube and Contact) */
+.info-box {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.info-item {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    border-top: 6px solid darkblue;
+    text-align: center;
+}
+
+.info-item h2 {
+    margin-top: 0;
+    color: green;
+}
+
+.info-item a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.info-item a:hover {
+    color: black;
+    background-color: cornsilk;
 }
